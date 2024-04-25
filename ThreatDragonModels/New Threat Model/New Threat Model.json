@@ -16,11 +16,674 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.2.0",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 630,
+              "y": 50
+            },
+            "size": {
+              "width": 440,
+              "height": 180
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Legitimate User Device"
+              }
+            },
+            "id": "572954a2-19ff-462e-a5ad-b784a0f3e2b6",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Legitimate User Device",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 1161,
+              "y": 50.00000000000057
+            },
+            "size": {
+              "width": 400,
+              "height": 180
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Rogue User Device"
+              }
+            },
+            "id": "e0d3f873-8744-4784-b2d6-6e598d21160e",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Rogue User Device",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 250,
+              "y": 470
+            },
+            "size": {
+              "width": 550,
+              "height": 200
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "On-prems network"
+              }
+            },
+            "id": "7ebbc7f3-65e7-4eea-9a2f-f0fe347bb439",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "On-prems network",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 86,
+              "y": 90.00000000000011
+            },
+            "size": {
+              "width": 340,
+              "height": 230
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Azure Tenant"
+              }
+            },
+            "id": "6b7c19fc-fdc5-4a32-83ff-817c3d37b91a",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Azure Tenant",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 670,
+              "y": 90
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Browser\n/ Client"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "79f3bcf8-b0c4-4bbc-a365-a3d1c8e455a7",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Process",
+              "name": "Browser\n/ Client",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "dfff23f5-294d-4bb2-b447-fceb28b5c069",
+                  "title": "Browser hijacking",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "TBD",
+                  "mitigation": "TBD",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 930,
+              "y": 90
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Legitimate User"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "2718b154-b79b-4e45-8b52-7b6f3e9fd09a",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Legitimate User",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1413,
+              "y": 90
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Rogue User"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "3e16c7f1-ef11-4e08-9f1a-cc6916d88ff8",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Rogue User",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1220,
+              "y": 90
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Browser\n/ Client"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "576df792-9c66-4253-8884-86b97abdf53f",
+            "data": {
+              "type": "tm.Process",
+              "name": "Browser\n/ Client",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 4
+          },
+          {
+            "position": {
+              "x": 766,
+              "y": 150
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Local Drive"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "824ae25b-5bd3-4c7e-ac89-28d17e1d7041",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Store",
+              "name": "Local Drive",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "13cb1566-d0ee-46fa-b1f6-ba88d28b1900",
+                  "title": "Malware in user device",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "TBD",
+                  "mitigation": "TBD",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Client-to-Gateway\nVPN Tunnel",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": true,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "d4e4f898-de65-4255-b5f1-8d6ed418d97b",
+                  "title": "Man-in-the-Middle attack",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "TBD",
+                  "mitigation": "TBD",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "f0e59a04-a59a-4ecc-8413-3ea58186c8fa",
+            "source": {
+              "cell": "79f3bcf8-b0c4-4bbc-a365-a3d1c8e455a7"
+            },
+            "target": {
+              "cell": "fdfddc57-b474-4fec-b9c7-9041c1bc207c"
+            },
+            "labels": [
+              "Client-to-Gateway\nVPN Tunnel"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Exfiltration Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": true,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "210680f6-3c57-41a7-ab2c-aa7ae89a635f",
+                  "title": "Data exfiltration from local drive to rogue user",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "TBD",
+                  "mitigation": "DLP",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "8ce69b0f-2ef9-4755-b218-2214919ed1b5",
+            "source": {
+              "cell": "824ae25b-5bd3-4c7e-ac89-28d17e1d7041"
+            },
+            "target": {
+              "cell": "576df792-9c66-4253-8884-86b97abdf53f"
+            },
+            "vertices": [
+              {
+                "x": 1050,
+                "y": 210
+              },
+              {
+                "x": 1110,
+                "y": 210
+              },
+              {
+                "x": 1150,
+                "y": 190
+              },
+              {
+                "x": 1190,
+                "y": 160
+              },
+              {
+                "x": 1210,
+                "y": 150
+              }
+            ],
+            "labels": [
+              "Exfiltration Flow"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Exfiltration Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": true,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "43878d0c-233c-4d9b-8601-03ec31601eb2",
+                  "title": "Data exfiltration through rogue VPN access",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "TBD",
+                  "mitigation": "TBD",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "8b3e2c57-3877-40e8-917f-ac002f1e0179",
+            "source": {
+              "cell": "fdfddc57-b474-4fec-b9c7-9041c1bc207c"
+            },
+            "target": {
+              "cell": "576df792-9c66-4253-8884-86b97abdf53f"
+            },
+            "vertices": [
+              {
+                "x": 1030,
+                "y": 310
+              }
+            ],
+            "labels": [
+              "Exfiltration Flow"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Gateway-to-Gateway\nVPN Tunnel",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "8554f799-3b1f-47ed-bfd2-4a0a2886b98f",
+            "source": {
+              "cell": "fdfddc57-b474-4fec-b9c7-9041c1bc207c"
+            },
+            "target": {
+              "cell": "28a6bf43-b630-4b56-89e6-c0930b4b4332"
+            },
+            "labels": [
+              "Gateway-to-Gateway\nVPN Tunnel"
+            ],
+            "vertices": [
+              {
+                "x": 580,
+                "y": 430
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 342,
+              "y": 170
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "VPN\nGateway"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "fdfddc57-b474-4fec-b9c7-9041c1bc207c",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Process",
+              "name": "VPN\nGateway",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "59c53613-995b-48bd-8a0b-830bc52b773f",
+                  "title": "Rogue user access with stolen credentials",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "TBD",
+                  "mitigation": "MFA",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 610,
+              "y": 512
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "VPN\nGateway"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "28a6bf43-b630-4b56-89e6-c0930b4b4332",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Process",
+              "name": "VPN\nGateway",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "d0b62729-f306-4906-b50f-1391319ac070",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 7,
+                  "score": ""
+                }
+              ]
+            }
+          }
+        ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 8
   }
 }
